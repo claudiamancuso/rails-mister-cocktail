@@ -1,0 +1,21 @@
+
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.1) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path "barbackground.jpg" %>);">
+  <div class="banner-content">
+    <div class="container padded">
+      <div class="row">
+        <h3>new cocktail</h3>
+        <h3 class ="text-center"><%=@cocktail.name%></h3>
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+          <%= simple_form_for(@cocktail) do |f| %>
+          <%= f.input :name, placeholder: "Choose a cocktail" %>
+          <%= f.button :submit, class: "btn btn-primary btn-green btn-lg" %>
+          <% end %>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

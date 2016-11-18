@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+
+    <div class= "text-center">
+      <%= image_tag "logo.png", class: "logo-pic" %>
+      <h3></h3>
+      <% @cocktails.each do |cocktail| %>
+      <div class="col-xs-12 col-sm-4">
+        <%= render "card", cocktail: cocktail %>
+      </div>
+      <% end %>
+
+      <div class= "text-center">
+        <%= link_to "add cocktail", new_cocktail_path, class: "btn btn-primary btn-green btn-lg" %>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
