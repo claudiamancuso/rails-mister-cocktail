@@ -16,7 +16,7 @@
               <%= f.input :ingredient_id, prompt: "Choose Ingredient", collection: Ingredient.all.map { |i| [i.name.capitalize, i.id] }  %>
               <%= f.input :description, placeholder: "Add Ingredient"  %>
               <%= f.button :submit, class: "btn btn-primary btn-green" %>
-              <%= link_to "Delete", cocktail_path(@cocktail), method: :delete, class: "btn btn-primary btn-green" %>
+               <%= link_to "Delete", cocktail_path(@cocktail), method: :delete, class: "btn btn-primary btn-green" %>
               <% end %>
             </div>
           </div>

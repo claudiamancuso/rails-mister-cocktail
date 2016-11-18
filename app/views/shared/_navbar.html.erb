@@ -11,7 +11,7 @@
 
     <!-- Search form -->
     <form action="" class="navbar-wagon-search">
-    <input type="text" class="navbar-wagon-search-input" placeholder="Find Cocktail">
+      <input type="text" class="navbar-wagon-search-input" placeholder="Find Cocktail">
       <button type="submit" class="navbar-wagon-search-btn">
         <i class="fa fa-search"></i>
       </button>
@@ -45,8 +45,10 @@
     </div>
 
     <!-- Button (call-to-action) -->
-    <%= link_to t(".top_call_to_action", default: "Post stuff"), "#", class: "navbar-wagon-item navbar-wagon-button btn" %>
+
+    <%= link_to "add cocktail", new_cocktail_path, class: "btn btn-primary btn-green btn-lg" %>
   </div>
+
 
   <!-- Dropdown list appearing on mobile only -->
   <div class="navbar-wagon-item hidden-md hidden-lg">
