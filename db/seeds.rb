@@ -9,21 +9,65 @@ Dose.destroy_all
 Ingredient.destroy_all
 Cocktail.destroy_all
 
-johnny = Cocktail.create(name: "Here's Johnny", image_url: "cocktail9.jpeg")
-lion = Cocktail.create(name: "Lion and Rose", image_url: "cocktail2.jpeg")
-heartbreaker = Cocktail.create(name: "Hibiscus Heartbreaker", image_url: "cocktail3.jpeg")
-proper = Cocktail.create(name: "Proper Dandy", image_url: "cocktail4.jpeg")
-border = Cocktail.create(name: "Border Control", image_url: "cocktail5.jpeg")
-suzy = Cocktail.create(name: "Suzy Q- House Special", image_url: "cocktail6.jpeg")
-purchase = Cocktail.create(name: "Lousiana Purchase", image_url: "cocktail7.jpg")
-meiji = Cocktail.create(name: "The Meiji Restoration", image_url: "cocktail8.jpg")
-money = Cocktail.create(name: "Money & Power", image_url: "cocktail1.jpg")
-martini = Cocktail.create(name: "Martini", image_url: "cocktail10.jpg")
-sour = Cocktail.create(name: "Whiskey Sour", image_url: "cocktail11.jpg")
-spritz = Cocktail.create(name: "Aperol Spritz", image_url: "cocktail12.jpg")
-fashioned = Cocktail.create(name: "Old Fashioned", image_url: "cocktail13.jpg")
-negroni = Cocktail.create(name: "Negroni", image_url: "cocktail14.jpg")
-manhattan = Cocktail.create(name: "Manhattan", image_url: "cocktail5.jpg")
+johnny = Cocktail.new(name: "Here's Johnny")
+johnny.remote_photo_url = File.join(Rails.root, 'db/seed-images/cocktail9.jpg')
+johnny.save
+
+lion = Cocktail.new(name: "Lion and Rose")
+lion.remote_photo_url = File.join(Rails.root, 'db/seed-images/cocktail2.jpeg')
+lion.save
+
+heartbreaker = Cocktail.new(name: "Hibiscus Heartbreaker")
+heartbreaker.remote_photo_url = File.join(Rails.root, 'db/seed-images/cocktail3.jpg')
+heartbreaker.save
+
+proper = Cocktail.new(name: "Proper Dandy")
+proper.remote_photo_url = File.join(Rails.root, 'db/seed-images/cocktail4.jpg')
+proper.save
+
+border = Cocktail.new(name: "Border Control")
+border.remote_photo_url = File.join(Rails.root, 'db/seed-images/cocktail5.jpg')
+border.save
+
+suzy = Cocktail.new(name: "Suzy Q- House Special")
+suzy.remote_photo_url = File.join(Rails.root, 'db/seed-images/cocktail6.jpg')
+suzy.save
+
+purchase = Cocktail.new(name: "Lousiana Purchase")
+purchase.remote_photo_url = File.join(Rails.root, 'db/seed-images/cocktail7.jpg')
+purchase.save
+
+meiji = Cocktail.new(name: "The Meiji Restoration")
+meiji.remote_photo_url = File.join(Rails.root, 'db/seed-images/cocktail8.jpg')
+meiji.save
+
+money = Cocktail.new(name: "Money & Power")
+money.remote_photo_url = File.join(Rails.root, 'db/seed-images/cocktail1.jpeg')
+money.save
+
+martini = Cocktail.new(name: "Martini")
+martini.remote_photo_url = File.join(Rails.root, 'db/seed-images/cocktail10.jpg')
+martini.save
+
+sour = Cocktail.new(name: "Whiskey Sour")
+sour.remote_photo_url = File.join(Rails.root, 'db/seed-images/cocktail11.jpg')
+sour.save
+
+spritz = Cocktail.new(name: "Aperol Spritz")
+spritz.remote_photo_url = File.join(Rails.root, 'db/seed-images/cocktail12.jpg')
+spritz.save
+
+fashioned = Cocktail.new(name: "Old Fashioned")
+fashioned.remote_photo_url = File.join(Rails.root, 'db/seed-images/cocktail13.jpg')
+fashioned.save
+
+negroni = Cocktail.new(name: "Negroni")
+negroni.remote_photo_url = File.join(Rails.root, 'db/seed-images/cocktail14.jpg')
+negroni.save
+
+manhattan = Cocktail.new(name: "Manhattan")
+manhattan.remote_photo_url = File.join(Rails.root, 'db/seed-images/cocktail15.jpg')
+manhattan.save
 
 lemon = Ingredient.create(name: "lemon")
 ice = Ingredient.create(name: "ice")
